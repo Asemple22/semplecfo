@@ -351,29 +351,79 @@ footer .container {
 }
 
 @media (max-width: 768px) {
+    /* Fix for page hanging off and grey gap */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .container {
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100%;
+    }
+
     header .container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        font-size: 24px; /* Reduce logo size for mobile */
+    }
+
+    nav {
+        width: 100%;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0;
     }
 
     nav ul li {
         margin: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem;
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+
+    /* Hero section */
+    #hero .container {
+        padding: 2rem 10px;
     }
 
     #hero h1 {
-        font-size: 36px;
+        font-size: 32px; /* Reduce font size for mobile */
     }
 
     #hero p {
-        font-size: 18px;
+        font-size: 18px; /* Reduce font size for mobile */
     }
 
-    .services-grid {
+    /* Adjust other sections */
+    section {
+        width: 100%;
+    }
+
+    .services-grid,
+    .blog-grid,
+    .faq-list {
         grid-template-columns: 1fr;
     }
 
@@ -381,12 +431,9 @@ footer .container {
         flex-direction: column;
     }
 
-    .about-text, .about-image {
-        width: 100%;
-    }
-
+    .about-text,
     .about-image {
-        margin-top: 1rem;
+        width: 100%;
     }
 
     footer .container {
@@ -397,10 +444,6 @@ footer .container {
     .social-links {
         margin-top: 1rem;
     }
-
-    .tools-grid, .blog-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 480px) {
@@ -409,67 +452,9 @@ footer .container {
     }
 }
 
-/* Mobile optimization */
-@media screen and (max-width: 768px) {
-  /* Fix for page hanging off and grey gap */
-  body {
-    overflow-x: hidden;
-    width: 100%;
-  }
-
-  /* Header and navigation */
-  header .container {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .logo {
-    margin-bottom: 1rem;
-    font-size: 24px; /* Reduce logo size for mobile */
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    display: flex; /* Always display the navigation */
-  }
-
-  nav ul li {
-    margin: 0.5rem 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 0.5rem;
-    font-size: 16px; /* Reduce font size for mobile */
-  }
-
-  /* Hero section */
-  #hero .container {
-    padding: 2rem 1rem;
-  }
-
-  #hero h1 {
-    font-size: 32px; /* Reduce font size for mobile */
-  }
-
-  #hero p {
-    font-size: 18px; /* Reduce font size for mobile */
-  }
-
-  /* Other existing mobile styles remain unchanged */
-}
-
 /* Make images responsive */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
