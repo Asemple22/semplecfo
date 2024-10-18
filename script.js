@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('nav');
 
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function(event) {
+        event.stopPropagation();
         this.classList.toggle('active');
         nav.classList.toggle('active');
     });
@@ -51,10 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
-        const isClickInsideNav = nav.contains(event.target);
-        const isClickInsideHamburger = hamburger.contains(event.target);
-
-        if (!isClickInsideNav && !isClickInsideHamburger && nav.classList.contains('active')) {
+        if (nav.classList.contains('active') && !nav.contains(event.target) && !hamburger.contains(event.target)) {
             hamburger.classList.remove('active');
             nav.classList.remove('active');
         }
