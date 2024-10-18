@@ -30,4 +30,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Change testimonial every 5 seconds
     setInterval(showNextTestimonial, 5000);
+
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickInsideHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideNav && !isClickInsideHamburger && nav.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            nav.classList.remove('active');
+        }
+    });
 });
