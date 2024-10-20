@@ -810,12 +810,12 @@ footer {
     }
 
     .main-nav {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--secondary-color);
-        display: none;
         padding: 20px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     }
@@ -840,6 +840,10 @@ footer {
     .cta-button {
         display: inline-block;
         margin-top: 10px;
+    }
+
+    header {
+        position: relative;
     }
 }
 
