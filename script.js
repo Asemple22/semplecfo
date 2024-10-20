@@ -65,5 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mobileMenuToggle.addEventListener('click', function() {
         mainNav.classList.toggle('active');
+        this.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
     });
 });

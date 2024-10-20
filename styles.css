@@ -1106,3 +1106,63 @@ nav ul li a.active::after {
     margin-bottom: 15px;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-container {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .mobile-menu-toggle {
+        order: 2;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--primary-color);
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        display: none;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-nav ul li:last-child {
+        margin-left: 0;
+    }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Fix for logo on mobile */
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        object-fit: contain;
+    }
+}
