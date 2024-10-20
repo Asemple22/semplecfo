@@ -11,15 +11,13 @@
     <header>
         <div class="container">
             <a href="index.html" class="logo-container">
-                <div class="logo-icon">
-                    <i class="fas fa-terminal"></i>
-                </div>
+                <img src="images/Slogo.png" alt="Semple Financial Logo" class="logo-icon">
                 <span class="company-name">Semple Financial</span>
             </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="contact.html" class="cta-button">Contact</a></li>
@@ -31,53 +29,108 @@
     <main>
         <section id="services-hero">
             <div class="container">
-                <h1>Our Services</h1>
-                <p>Comprehensive financial solutions to drive your business forward</p>
+                <h1 class="hero-title">Our Services</h1>
+                <p class="hero-subtitle">Comprehensive financial solutions to drive your business forward</p>
             </div>
         </section>
 
         <section id="services-list">
             <div class="container">
-                <div class="services-grid">
-                    <div class="service-item">
+                <div class="service-grid">
+                    <div id="financial-planning" class="service-item">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Financial Planning</h3>
-                        <p>Strategic planning for sustainable growth and long-term success</p>
+                        <h2>Financial Planning</h2>
+                        <p>Strategic planning for sustainable growth and long-term success.</p>
+                        <ul>
+                            <li>Comprehensive financial strategies</li>
+                            <li>Long-term projections and growth plans</li>
+                            <li>Risk and opportunity identification</li>
+                            <li>Capital structure optimization</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="bookkeeping" class="service-item">
                         <i class="fas fa-calculator"></i>
-                        <h3>Bookkeeping</h3>
-                        <p>Accurate and timely financial records to keep your business on track</p>
+                        <h2>Bookkeeping</h2>
+                        <p>Accurate and up-to-date financial records for your business.</p>
+                        <ul>
+                            <li>Precise financial transaction recording</li>
+                            <li>Bank and credit card reconciliation</li>
+                            <li>Accounts payable and receivable management</li>
+                            <li>Financial statement preparation</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="tax-planning" class="service-item">
                         <i class="fas fa-file-invoice-dollar"></i>
-                        <h3>Tax Planning</h3>
-                        <p>Optimize your tax strategy to minimize liabilities and maximize savings</p>
+                        <h2>Tax Planning</h2>
+                        <p>Optimize your tax strategy while ensuring full compliance.</p>
+                        <ul>
+                            <li>Comprehensive tax planning and strategy</li>
+                            <li>Tax-saving opportunity identification</li>
+                            <li>Guidance on tax implications</li>
+                            <li>Tax return preparation assistance</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="financial-reporting" class="service-item">
                         <i class="fas fa-chart-pie"></i>
-                        <h3>Financial Reporting</h3>
-                        <p>Comprehensive insights for informed decision-making and stakeholder communication</p>
+                        <h2>Financial Reporting</h2>
+                        <p>Comprehensive insights for informed decision-making.</p>
+                        <ul>
+                            <li>Accurate and timely financial statements</li>
+                            <li>Custom financial reports</li>
+                            <li>Financial data analysis and interpretation</li>
+                            <li>KPI tracking and reporting</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="cash-flow-management" class="service-item">
                         <i class="fas fa-coins"></i>
-                        <h3>Cash Flow Management</h3>
-                        <p>Optimize your cash flow to ensure financial stability and growth opportunities</p>
+                        <h2>Cash Flow Management</h2>
+                        <p>Optimize cash flow for financial stability and growth.</p>
+                        <ul>
+                            <li>Cash flow forecasts and projections</li>
+                            <li>Cash flow bottleneck identification</li>
+                            <li>Effective cash management strategies</li>
+                            <li>Working capital optimization</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="budgeting-forecasting" class="service-item">
                         <i class="fas fa-balance-scale"></i>
-                        <h3>Budgeting & Forecasting</h3>
-                        <p>Create realistic budgets and accurate forecasts to guide your business</p>
+                        <h2>Budgeting & Forecasting</h2>
+                        <p>Create realistic budgets and accurate forecasts.</p>
+                        <ul>
+                            <li>Comprehensive annual budgets</li>
+                            <li>Rolling forecasts for improved accuracy</li>
+                            <li>Scenario planning and sensitivity analysis</li>
+                            <li>Budget vs. actual variance analysis</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="mergers-acquisitions" class="service-item">
                         <i class="fas fa-handshake"></i>
-                        <h3>Mergers & Acquisitions</h3>
-                        <p>Expert guidance for successful mergers, acquisitions, and business valuations</p>
+                        <h2>Mergers & Acquisitions</h2>
+                        <p>Expert guidance for successful M&A transactions.</p>
+                        <ul>
+                            <li>Financial due diligence</li>
+                            <li>Business valuation and deal structuring</li>
+                            <li>Post-merger integration planning</li>
+                            <li>Synergy identification and realization</li>
+                        </ul>
                     </div>
-                    <div class="service-item">
+
+                    <div id="financial-analysis" class="service-item">
                         <i class="fas fa-chart-bar"></i>
-                        <h3>Financial Analysis</h3>
-                        <p>In-depth analysis of financial data to identify trends and opportunities</p>
+                        <h2>Financial Analysis</h2>
+                        <p>In-depth analysis to identify trends and opportunities.</p>
+                        <ul>
+                            <li>Comprehensive financial statement analysis</li>
+                            <li>Ratio analysis and industry benchmarking</li>
+                            <li>Profitability and cost structure analysis</li>
+                            <li>ROI analysis for projects and initiatives</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -86,7 +139,7 @@
         <section id="custom-services">
             <div class="container">
                 <h2>Tailored Solutions for Your Business</h2>
-                <p>Don't see exactly what you need? We offer customized financial management solutions to meet your specific requirements. Contact us to discuss how we can help your business thrive.</p>
+                <p>Don't see exactly what you need? We offer customized financial management solutions to meet your specific requirements.</p>
                 <a href="contact.html" class="cta-button">Get in Touch</a>
             </div>
         </section>
@@ -96,7 +149,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Semple CFO Solutions</h3>
+                    <h3>Semple Financial</h3>
                     <p>Your trusted financial partner for business growth and success.</p>
                 </div>
                 <div class="footer-section">
@@ -104,19 +157,18 @@
                     <ul>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Us</h3>
                     <p>123 Financial Street, Suite 100<br>Cityville, State 12345</p>
-                    <p>Phone: (123) 456-7890<br>Email: info@semplecfo.com</p>
+                    <p>Phone: (123) 456-7890<br>Email: info@semplefinancial.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Semple CFO Solutions. All rights reserved.</p>
+                <p>&copy; 2023 Semple Financial. All rights reserved.</p>
                 <div class="social-links">
                     <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>

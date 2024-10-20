@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Resources - Semple Financial</title>
+    <title>Contact Us - Semple Financial</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -21,8 +21,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resources.html" class="active">Resources</a></li>
-                    <li><a href="contact.html" class="cta-button">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active cta-button">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,48 +31,53 @@
     <main>
         <section id="hero">
             <div class="container">
-                <h1 class="hero-title">Financial Resources</h1>
-                <p class="hero-subtitle">Empower your business with our collection of financial tools and insights</p>
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">We're here to answer your questions and help your business thrive</p>
             </div>
         </section>
 
-        <section id="resources-list">
+        <section id="contact-form">
             <div class="container">
-                <h2 class="section-title">Our Tools</h2>
-                <div class="resources-grid">
-                    <div class="resource-item">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>Cash Flow Management Guide</h3>
-                        <p>Learn strategies to optimize your cash flow and maintain financial stability.</p>
-                        <a href="#" class="resource-link">Download PDF</a>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>123 Financial Street, Suite 100<br>Cityville, State 12345</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <p>(123) 456-7890</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>info@semplefinancial.com</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resource-item">
-                        <i class="fas fa-calculator"></i>
-                        <h3>Financial Ratio Calculator</h3>
-                        <p>Calculate key financial ratios to assess your business's performance.</p>
-                        <a href="#" class="resource-link">Use Calculator</a>
-                    </div>
-                    <div class="resource-item">
-                        <i class="fas fa-video"></i>
-                        <h3>Budgeting Basics Webinar</h3>
-                        <p>Watch our recorded webinar on creating effective business budgets.</p>
-                        <a href="#" class="resource-link">Watch Video</a>
-                    </div>
-                    <div class="resource-item">
-                        <i class="fas fa-book"></i>
-                        <h3>Tax Planning Strategies eBook</h3>
-                        <p>Discover tax optimization techniques for small to medium-sized businesses.</p>
-                        <a href="tax-planning-ebook.html" class="resource-link">Read eBook</a>
-                    </div>
+                    <form id="contact-form">
+                        <h2>Send Us A Message</h2>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
                 </div>
-            </div>
-        </section>
-
-        <section id="resource-cta">
-            <div class="container">
-                <h2 class="section-title">Need Personalized Financial Guidance?</h2>
-                <p class="section-description">Our team of experts is ready to help you navigate your specific financial challenges.</p>
-                <a href="contact.html" class="cta-button">Schedule a Consultation</a>
             </div>
         </section>
     </main>

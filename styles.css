@@ -59,13 +59,17 @@ header .container {
 .logo-icon {
     width: 40px;
     height: 40px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-icon span {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    margin-right: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .logo-icon i {
@@ -92,7 +96,7 @@ nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px; /* Increased from 16px to 18px */
     transition: color 0.3s ease;
     padding: 10px 0;
 }
@@ -112,6 +116,7 @@ nav ul li:last-child {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: 700;
+    font-size: 18px; /* Added font-size to match the other nav links */
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     border: 2px solid var(--accent-color);
@@ -143,8 +148,10 @@ nav ul li:last-child {
 }
 
 #hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.3;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 
 #hero p {
@@ -163,34 +170,44 @@ nav ul li:last-child {
     margin-bottom: 40px; /* Add some space below the heading */
 }
 
-.services-grid {
+#services-overview .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
 }
 
-.service-item {
-    text-align: center;
-    padding: 30px;
+#services-overview .service-item {
     background-color: var(--background-color);
+    padding: 30px;
     border-radius: 5px;
-    transition: transform 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.service-item:hover {
+#services-overview .service-item:hover {
     transform: translateY(-5px);
+    border-color: var(--accent-color);
 }
 
-.service-item i {
+#services-overview .service-item i {
     font-size: 48px;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-.service-item h3 {
-    margin-bottom: 10px;
+#services-overview .service-item h3 {
     color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#services-overview .service-item p {
+    margin-bottom: 0;
+    flex-grow: 1;
 }
 
 /* About overview styles */
@@ -305,6 +322,38 @@ footer {
     padding: 150px 0 100px;
 }
 
+#services-hero .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+#services-hero .hero-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    #services-hero .hero-title {
+        font-size: 60px;
+    }
+    
+    #services-hero .hero-subtitle {
+        font-size: 20px;
+    }
+}
+
 #services-hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -327,13 +376,25 @@ footer {
 }
 
 #custom-services h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #custom-services p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 30px;
+    color: var(--text-color);
+}
+
+#custom-services .cta-button {
+    font-size: 18px;
+    padding: 12px 24px;
 }
 
 /* Add these styles to your existing CSS file */
@@ -781,3 +842,263 @@ footer {
         margin-top: 10px;
     }
 }
+
+/* Services page specific styles */
+#services-list .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#services-list .service-item {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services-list .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#services-list .service-item i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#services-list .service-item h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#services-list .service-item p {
+    margin-bottom: 20px;
+}
+
+#services-list .service-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#services-list .service-item ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#services-list .service-item ul li::before {
+    content: "\2022";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+#custom-services {
+    background-color: var(--background-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+#custom-services h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#custom-services p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Contact page styles */
+#contact-hero {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 150px 0 100px;
+}
+
+#contact-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#contact-hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2,
+#contact-form form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add this to your existing styles */
+nav ul li a.active {
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 120px !important; /* Decreased from 180px to 120px */
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    max-width: 1200px !important;
+    margin: 0 auto 40px !important;
+    color: var(--secondary-color) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) !important;
+    letter-spacing: 0.5px !important;
+}
+
+.hero-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 60px !important; /* Decreased from 90px to 60px for mobile */
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    line-height: 1.2;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 48px;
+    }
+}
+
+/* Add this new style for the section paragraphs */
+.section-description {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: var(--text-color);
+}
+
+/* Update existing styles */
+#services-overview p,
+#about-overview p,
+#resources-overview p,
+#contact-overview p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Adjust service item text */
+#services-overview .service-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* Adjust resource item text */
+.resource-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
