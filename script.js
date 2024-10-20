@@ -57,4 +57,11 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.remove('active');
         }
     });
+
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
 });
