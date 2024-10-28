@@ -24,15 +24,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form submission
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show an alert
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
+    // Form submission handling for both contact and newsletter forms
+    const forms = document.querySelectorAll('form[action*="formspree"]');
+    if (forms) {
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Thank you for your message! We will get back to you soon.');
+                        form.reset();
+                    } else {
+                        response.json().then(data => {
+                            alert('Error: ' + (data.error || 'Something went wrong'));
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error sending message. Please try again.');
+                });
+            });
         });
     }
 

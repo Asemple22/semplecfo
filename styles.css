@@ -66,6 +66,7 @@ header .container {
     text-decoration: none;
     color: inherit;
     transition: opacity 0.3s ease;
+    gap: 12px;
 }
 
 .logo-container:hover {
@@ -77,8 +78,9 @@ header .container {
     height: 30px;
     min-width: 30px;
     object-fit: contain;
-    display: block; /* Added */
-    max-width: 100%; /* Added */
+    display: block;
+    max-width: 100%;
+    margin-right: 0; /* Remove margin-right since we're using gap */
 }
 
 .logo-icon span {
@@ -97,6 +99,7 @@ header .container {
     font-size: 24px;
     font-weight: bold;
     color: var(--primary-color);
+    padding-left: 0; /* Remove any padding */
 }
 
 nav ul {
@@ -1840,5 +1843,50 @@ input[type="submit"] {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Hero section backgrounds */
+.services-page #hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/angular-texture-navy.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.about-page #hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/marble-texture.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.resources-page #hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/hex-design.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.contact-page #hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/marble2-texture.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Ensure images work on mobile */
+@media (max-width: 768px) {
+    #hero {
+        background-attachment: scroll !important;
+        background-position: center !important;
+    }
 }
 
