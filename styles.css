@@ -1697,3 +1697,81 @@ footer .cta-button:hover {
     }
 }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Adjust hero title size */
+    .hero-title {
+        font-size: 48px !important;
+        padding: 0 20px;
+    }
+
+    /* Make service grid single column */
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px;
+    }
+
+    /* Adjust resource items */
+    .resource-item {
+        flex-basis: 100% !important;
+        margin: 0 20px 20px;
+    }
+
+    /* Make sections more compact */
+    section {
+        padding: 40px 0 !important;
+    }
+
+    /* Adjust footer layout */
+    .footer-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Make form inputs full width */
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust spacing for better mobile reading */
+    p, h2, h3 {
+        padding: 0 20px;
+    }
+
+    /* Make buttons more tappable */
+    .cta-button {
+        padding: 15px 30px;
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        text-align: center;
+    }
+}
+
+/* Add smooth scrolling for better mobile experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve touch targets */
+button, 
+a,
+input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Optimize images */
+img {
+    max-width: 100%;
+    height: auto;
+}
