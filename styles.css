@@ -1055,6 +1055,37 @@ footer {
         min-width: 30px;
         object-fit: contain;
     }
+
+    /* Resource items on mobile */
+    .resources-preview {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .resource-item {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .resource-item h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .resource-item p {
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .resource-item i {
+        font-size: 40px;
+        margin: 30px 0 20px;
+    }
 }
 
 /* Services page specific styles */
@@ -1775,3 +1806,4 @@ img {
     max-width: 100%;
     height: auto;
 }
+
