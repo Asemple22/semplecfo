@@ -52,4 +52,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // Change testimonial every 5 seconds
         setInterval(showNextTestimonial, 5000);
     }
+
+    // Parallax effect
+    const parallaxBackground = document.querySelector('.parallax-background');
+    
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        parallaxBackground.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    });
+
+    // Parallax effect for footer
+    const footer = document.querySelector('footer');
+    const footerBackground = footer.querySelector('::before');
+    
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        const footerOffset = footer.offsetTop;
+        const windowHeight = window.innerHeight;
+        
+        if (scrollPosition + windowHeight > footerOffset) {
+            const parallaxSpeed = 0.5; // Adjust this value to change the parallax speed
+            const yOffset = (scrollPosition + windowHeight - footerOffset) * parallaxSpeed;
+            footerBackground.style.transform = `translateY(${yOffset}px)`;
+        }
+    });
 });

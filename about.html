@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
+<body class="about-page">
     <header>
         <div class="container">
             <a href="index.html" class="logo-container">
@@ -29,35 +29,32 @@
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="bg-white">
             <div class="container">
                 <h1 class="hero-title">It's Simple with Semple</h1>
                 <p class="hero-subtitle">Your trusted financial partners for business growth and success</p>
             </div>
         </section>
 
-        <section id="our-story">
+        <section id="our-story" class="bg-white">
             <div class="container">
                 <h2 class="section-title">Our Story</h2>
                 <div class="about-content">
-                    <div class="about-text">
-                        <p class="section-description">Semple Financial was founded by two brothers with a shared passion for finance and a drive to help businesses succeed. Our competitive spirit, honed through years of friendly rivalry, now fuels our commitment to delivering exceptional financial services to our clients.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="path/to/founders-image.jpg" alt="Semple Financial Founders">
-                    </div>
+                    <p class="section-description">Semple Financial was founded by two brothers with a shared passion for finance and a drive to help businesses succeed. Our competitive spirit, honed through years of friendly rivalry, now fuels our commitment to delivering exceptional financial services to our clients.</p>
                 </div>
             </div>
         </section>
 
-        <section id="our-mission">
+        <section id="our-mission" class="bg-gray">
             <div class="container">
                 <h2 class="section-title">Our Mission</h2>
-                <p class="section-description">At Semple Financial, our mission is to empower businesses with expert financial management, offering strategic insights, comprehensive solutions, and proactive guidance that drive growth, improve profitability, and ensure long-term financial stability.</p>
+                <div class="mission-content">
+                    <p class="section-description">At Semple Financial, our mission is to empower businesses with expert financial management, offering strategic insights, comprehensive solutions, and proactive guidance that drive growth, improve profitability, and ensure long-term financial stability.</p>
+                </div>
             </div>
         </section>
 
-        <section id="our-values">
+        <section id="our-values" class="bg-white">
             <div class="container">
                 <h2 class="section-title">Our Values</h2>
                 <div class="values-grid">
@@ -85,25 +82,7 @@
             </div>
         </section>
 
-        <section id="team">
-            <div class="container">
-                <h2 class="section-title">Our Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="path/to/team-member-1.jpg" alt="John Semple">
-                        <h3>John Semple</h3>
-                        <p>Co-Founder & CFO Specialist</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="path/to/team-member-2.jpg" alt="Michael Semple">
-                        <h3>Michael Semple</h3>
-                        <p>Co-Founder & Financial Strategist</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta">
+        <section id="cta" class="bg-gray">
             <div class="container">
                 <h2 class="section-title">Ready to Take Your Business to the Next Level?</h2>
                 <p class="section-description">Let's work together to achieve your financial goals and drive your business forward.</p>
@@ -118,29 +97,43 @@
                 <div class="footer-section">
                     <h3>Semple Financial</h3>
                     <p>Your trusted financial partner for business growth and success.</p>
+                    <p class="footer-bottom-text">&copy; 2023 Semple Financial. All rights reserved.</p>
+                    <p class="footer-bottom-text"><a href="terms-of-service.html" class="footer-link">Terms of Service</a> | <a href="privacy-policy.html" class="footer-link">Privacy Policy</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>123 Financial Street, Suite 100<br>Cityville, State 12345</p>
-                    <p>Phone: (123) 456-7890<br>Email: info@semplecfo.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Semple Financial. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <div class="footer-section newsletter">
+                    <h3>Subscribe to our newsletter</h3>
+                    <form id="newsletter-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="cta-button">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

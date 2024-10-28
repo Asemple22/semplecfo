@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
+<body class="services-page">
     <header>
         <div class="container">
             <a href="index.html" class="logo-container">
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <section id="services-hero">
+        <section id="hero">
             <div class="container">
                 <h1 class="hero-title">Our Services</h1>
                 <p class="hero-subtitle">Comprehensive financial solutions to drive your business forward</p>
@@ -37,18 +37,6 @@
         <section id="services-list">
             <div class="container">
                 <div class="service-grid">
-                    <div id="financial-planning" class="service-item">
-                        <i class="fas fa-chart-line"></i>
-                        <h2>Financial Planning</h2>
-                        <p>Strategic planning for sustainable growth and long-term success.</p>
-                        <ul>
-                            <li>Comprehensive financial strategies</li>
-                            <li>Long-term projections and growth plans</li>
-                            <li>Risk and opportunity identification</li>
-                            <li>Capital structure optimization</li>
-                        </ul>
-                    </div>
-
                     <div id="bookkeeping" class="service-item">
                         <i class="fas fa-calculator"></i>
                         <h2>Bookkeeping</h2>
@@ -61,27 +49,26 @@
                         </ul>
                     </div>
 
-                    <div id="tax-planning" class="service-item">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                        <h2>Tax Planning</h2>
-                        <p>Optimize your tax strategy while ensuring full compliance.</p>
-                        <ul>
-                            <li>Comprehensive tax planning and strategy</li>
-                            <li>Tax-saving opportunity identification</li>
-                            <li>Guidance on tax implications</li>
-                            <li>Tax return preparation assistance</li>
-                        </ul>
-                    </div>
-
                     <div id="financial-reporting" class="service-item">
                         <i class="fas fa-chart-pie"></i>
                         <h2>Financial Reporting</h2>
-                        <p>Comprehensive insights for informed decision-making.</p>
+                        <p>Clear, actionable insights for informed decision-making.</p>
                         <ul>
                             <li>Accurate and timely financial statements</li>
                             <li>Custom financial reports</li>
                             <li>Financial data analysis and interpretation</li>
                             <li>KPI tracking and reporting</li>
+                        </ul>
+                    </div>
+
+                    <div id="financial-planning" class="service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h2>Financial Planning & Analysis</h2>
+                        <p>Strategic planning and analysis for sustainable growth.</p>
+                        <ul>
+                            <li>Business performance analysis</li>
+                            <li>Strategic planning and forecasting</li>
+                            <li>Growth opportunity identification</li>
                         </ul>
                     </div>
 
@@ -97,39 +84,25 @@
                         </ul>
                     </div>
 
-                    <div id="budgeting-forecasting" class="service-item">
-                        <i class="fas fa-balance-scale"></i>
-                        <h2>Budgeting & Forecasting</h2>
-                        <p>Create realistic budgets and accurate forecasts.</p>
+                    <div id="profitability-management" class="service-item">
+                        <i class="fas fa-percentage"></i>
+                        <h2>Profitability & Cost Management</h2>
+                        <p>Maximize profitability through strategic cost optimization.</p>
                         <ul>
-                            <li>Comprehensive annual budgets</li>
-                            <li>Rolling forecasts for improved accuracy</li>
-                            <li>Scenario planning and sensitivity analysis</li>
-                            <li>Budget vs. actual variance analysis</li>
+                            <li>Profit margin analysis and improvement</li>
+                            <li>Cost structure optimization</li>
+                            <li>Pricing strategy development</li>
                         </ul>
                     </div>
 
-                    <div id="mergers-acquisitions" class="service-item">
-                        <i class="fas fa-handshake"></i>
-                        <h2>Mergers & Acquisitions</h2>
-                        <p>Expert guidance for successful M&A transactions.</p>
+                    <div id="financial-systems" class="service-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Financial Systems & Technology</h2>
+                        <p>Modern financial technology solutions for business efficiency.</p>
                         <ul>
-                            <li>Financial due diligence</li>
-                            <li>Business valuation and deal structuring</li>
-                            <li>Post-merger integration planning</li>
-                            <li>Synergy identification and realization</li>
-                        </ul>
-                    </div>
-
-                    <div id="financial-analysis" class="service-item">
-                        <i class="fas fa-chart-bar"></i>
-                        <h2>Financial Analysis</h2>
-                        <p>In-depth analysis to identify trends and opportunities.</p>
-                        <ul>
-                            <li>Comprehensive financial statement analysis</li>
-                            <li>Ratio analysis and industry benchmarking</li>
-                            <li>Profitability and cost structure analysis</li>
-                            <li>ROI analysis for projects and initiatives</li>
+                            <li>Financial software implementation</li>
+                            <li>System integration and automation</li>
+                            <li>Digital transformation guidance</li>
                         </ul>
                     </div>
                 </div>
@@ -138,8 +111,8 @@
 
         <section id="custom-services">
             <div class="container">
-                <h2>Tailored Solutions for Your Business</h2>
-                <p>Don't see exactly what you need? We offer customized financial management solutions to meet your specific requirements.</p>
+                <h2>Don't see exactly what you need?</h2>
+                <p>We offer customized financial management solutions to meet your specific requirements.</p>
                 <a href="contact.html" class="cta-button">Get in Touch</a>
             </div>
         </section>
@@ -151,6 +124,8 @@
                 <div class="footer-section">
                     <h3>Semple Financial</h3>
                     <p>Your trusted financial partner for business growth and success.</p>
+                    <p class="footer-bottom-text">&copy; 2023 Semple Financial. All rights reserved.</p>
+                    <p class="footer-bottom-text"><a href="terms-of-service.html" class="footer-link">Terms of Service</a> | <a href="privacy-policy.html" class="footer-link">Privacy Policy</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -161,18 +136,31 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>123 Financial Street, Suite 100<br>Cityville, State 12345</p>
-                    <p>Phone: (123) 456-7890<br>Email: info@semplefinancial.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Semple Financial. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <div class="footer-section newsletter">
+                    <h3>Subscribe to our newsletter</h3>
+                    <form id="newsletter-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="cta-button">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
