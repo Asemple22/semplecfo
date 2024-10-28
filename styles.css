@@ -175,7 +175,7 @@ nav ul li a.cta-button.active::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile */
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
@@ -1028,6 +1028,7 @@ footer {
         background-color: var(--secondary-color);
         padding: 20px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Added */
     }
 
     .main-nav.active {
@@ -1036,12 +1037,18 @@ footer {
 
     .main-nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Changed from flex-start to center */
     }
 
     .main-nav ul li {
         margin: 10px 0;
         width: 100%;
+        text-align: center; /* Added */
+    }
+
+    .main-nav ul li a {
+        display: inline-block; /* Added */
+        width: auto; /* Added */
     }
 
     .main-nav ul li:last-child {
@@ -1066,25 +1073,27 @@ footer {
         flex-direction: column;
         gap: 20px;
         padding: 0 20px;
+        align-items: center; /* Added to center items */
     }
 
     .resource-item {
         flex-basis: 100% !important;
         max-width: 100% !important;
         margin: 0;
-        width: 100%;
+        width: calc(100% - 40px); /* Added to account for padding */
         box-sizing: border-box;
     }
 
     .resource-item h3 {
         font-size: 20px;
         margin-bottom: 10px;
+        padding: 0; /* Remove padding to prevent offset */
     }
 
     .resource-item p {
         font-size: 16px;
         margin-bottom: 15px;
-        padding: 0;
+        padding: 0; /* Remove padding to prevent offset */
     }
 
     .resource-item i {
@@ -1433,7 +1442,7 @@ nav ul li a.active::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile */
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
@@ -1457,7 +1466,7 @@ nav ul li a.active::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile */
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
@@ -1472,7 +1481,7 @@ nav ul li a.active::after {
     background-size: cover;
     background-position: center top; /* Changed from center bottom to center top */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile */
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
@@ -1516,7 +1525,7 @@ nav ul li a.active::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile */
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
