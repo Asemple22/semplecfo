@@ -25,17 +25,7 @@ body {
 }
 
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('images/wavy-texture-navy.png');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    will-change: transform;
+    content: none;
 }
 
 .container {
@@ -175,11 +165,11 @@ nav ul li a.cta-button.active::after {
 /* Hero section styles */
 #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.5), rgba(10, 38, 71, 0.5)), url('images/wavy-texture-navy.png');
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/wavy-texture-navy.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* Changed from fixed for mobile */
+    background-attachment: scroll;
     color: var(--secondary-color);
     text-align: center;
     padding: 150px 0 100px;
@@ -188,17 +178,7 @@ nav ul li a.cta-button.active::after {
 }
 
 #hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    will-change: transform;
+    content: none;
 }
 
 .hero-title {
