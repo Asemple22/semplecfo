@@ -164,17 +164,13 @@ nav ul li a.cta-button.active::after {
 
 /* Hero section styles */
 #hero {
+    position: relative;
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/wavy-texture-navy.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('images/wavy-texture-navy.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    color: var(--secondary-color);
-    text-align: center;
     padding: 150px 0 100px;
-    position: relative;
-    overflow: hidden;
 }
 
 #hero::before {
@@ -1867,6 +1863,54 @@ img {
     #hero {
         background-attachment: scroll !important;
         background-position: center !important;
+    }
+}
+
+#hero .container {
+    text-align: center;
+}
+
+#hero .hero-title {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#hero .cta-button {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* Hero section styles for all pages */
+#hero .container {
+    text-align: center;
+}
+
+#hero .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 auto;
+    max-width: 800px;
+    color: var(--secondary-color);
+}
+
+#hero .hero-subtitle {
+    font-size: 24px;
+    margin: 20px auto 30px;
+    max-width: 800px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    #hero .hero-title {
+        font-size: 48px;
+        padding: 0 20px;
+    }
+    
+    #hero .hero-subtitle {
+        font-size: 20px;
+        padding: 0 20px;
     }
 }
 
