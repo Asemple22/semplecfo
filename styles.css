@@ -53,43 +53,32 @@ header .container {
 .logo-container {
     display: flex;
     align-items: center;
+    gap: 10px;
     text-decoration: none;
-    color: inherit;
-    transition: opacity 0.3s ease;
-    gap: 12px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo-container:hover {
-    opacity: 0.8;
+    transform: scale(1.02);
+    opacity: 0.85;
 }
 
 .logo-icon {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    object-fit: contain;
-    display: block;
-    max-width: 100%;
-    margin-right: 0; /* Remove margin-right since we're using gap */
-}
-
-.logo-icon span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.logo-icon i {
-    font-size: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .company-name {
+    font-family: 'Lato', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--primary-color);
-    padding-left: 0; /* Remove any padding */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-name:hover {
+    color: var(--accent-color);
 }
 
 nav ul {
