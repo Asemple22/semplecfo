@@ -155,7 +155,7 @@ nav ul li a.cta-button.active::after {
 #hero {
     position: relative;
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/wavy-texture-navy.png');
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/wavy-texture-navy.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1407,7 +1407,7 @@ nav ul li a.active::after {
 /* Add this new style for the services page hero */
 .services-page #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/angular-texture-navy.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/angular-texture-navy.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1431,7 +1431,7 @@ nav ul li a.active::after {
 /* Add this new style for the about page hero */
 .about-page #hero {
     background-color: var(--primary-color); /* Fallback color */
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/marble-texture.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/marble-texture.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1446,7 +1446,7 @@ nav ul li a.active::after {
 /* Add this new style for the contact page hero */
 .contact-page #hero {
     background-color: var(--primary-color); /* Fallback color */
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/marble2-texture.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/marble2-texture.png') !important;
     background-size: cover;
     background-position: center top; /* Changed from center bottom to center top */
     background-repeat: no-repeat;
@@ -1469,7 +1469,7 @@ nav ul li a.active::after {
 }
 
 .parallax-background {
-    background-image: url('./images/marble2-texture.png');
+    background-image: url('/semplecfo/images/marble2-texture.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -1490,7 +1490,7 @@ nav ul li a.active::after {
 /* Add this new style for the resources page hero */
 .resources-page #hero {
     background-color: var(--primary-color); /* Fallback color */
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/hex-design.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/hex-design.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1813,7 +1813,7 @@ img {
 /* Hero section backgrounds */
 .services-page #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/angular-texture-navy.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/angular-texture-navy.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1822,7 +1822,7 @@ img {
 
 .about-page #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/marble-texture.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/marble-texture.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1831,7 +1831,7 @@ img {
 
 .resources-page #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/hex-design.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/hex-design.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1840,7 +1840,7 @@ img {
 
 .contact-page #hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('./images/marble2-texture.png') !important;
+    background-image: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), url('/semplecfo/images/marble2-texture.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
